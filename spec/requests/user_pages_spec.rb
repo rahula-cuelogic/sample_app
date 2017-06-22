@@ -37,7 +37,7 @@ describe "User pages" do
         before { click_button submit }
 
         it { should have_selector('title', text: 'Sign Up') }
-        it { should have_selector('error') }
+        it { should have_content('error') }
       end
 
     end
